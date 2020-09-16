@@ -19,9 +19,9 @@ namespace TowerDefence.Managers
         private List<Enemy> aliveEnemies = new List<Enemy>();
 
         //Function to spawn enemies
-        private void SpawnEnemy()
+        public void SpawnEnemy(Transform _spawner)
         {
-            GameObject newEnemy = Instantiate(enemyPrefab);
+            GameObject newEnemy = Instantiate(enemyPrefab, _spawner.position, enemyPrefab.transform.rotation);
             aliveEnemies.Add(newEnemy.GetComponent<Enemy>());
         }
 
@@ -54,7 +54,7 @@ namespace TowerDefence.Managers
         //Set up singleton instance in Awake() so that it is ready to use
         private void Awake()
         {
-            if (instance = null)
+            if (instance == null)
             {
                 instance = this;
             }
