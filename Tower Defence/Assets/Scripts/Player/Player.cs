@@ -1,57 +1,63 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TowerDefence.Towers;
 
-public class Player : MonoBehaviour
+//namespaces - categories of things
+//Player will be able to access to the entire TowerDefence namespace
+namespace TowerDefence
 {
-    // singleton - only instance of happening once
-    /// <summary>
-    /// The reference to the only player gameObject in the game.
-    /// </summary>
-    public static Player instance = null;
-
-    [SerializeField, Tooltip("This sets the inital amount of money the player has.")]
-    private int money = 100;
-
-    /// <summary>
-    /// Gives the player the passed amount of money
-    /// </summary>
-    public void AddMoney(int _money)
+    public class Player : MonoBehaviour
     {
-        money += _money;
-    }
+        // singleton - only instance of happening once
+        /// <summary>
+        /// The reference to the only player gameObject in the game.
+        /// </summary>
+        public static Player instance = null;
 
-    /// <summary>
-    /// Handles the removal of money when purchasing a tower and
-    /// notifies the TowerManager to place the tower
-    /// </summary>
-    /// <param name="_tower">The tower being purchased.</param>
-    public void PurchaseTower(Tower _tower)
-    {
-        money -= _tower.Cost;
-    }
+        [SerializeField, Tooltip("This sets the inital amount of money the player has.")]
+        private int money = 100;
 
-    void Awake()
-    {
-        //if instance doesn't already exist, make it me
-        if (instance = null)
+        /// <summary>
+        /// Gives the player the passed amount of money
+        /// </summary>
+        public void AddMoney(int _money)
         {
-            instance = this;
+            money += _money;
         }
-        // is instance already set? and not me?
-        else if (instance != null)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        //this should only happen to the instance
-        //takes gameObject to separate scene to keep it
-        DontDestroyOnLoad(gameObject);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        /// <summary>
+        /// Handles the removal of money when purchasing a tower and
+        /// notifies the TowerManager to place the tower
+        /// </summary>
+        /// <param name="_tower">The tower being purchased.</param>
+        public void PurchaseTower(Tower _tower)
+        {
+            money -= _tower.Cost;
+        }
+
+        void Awake()
+        {
+            //if instance doesn't already exist, make it me
+            if (instance = null)
+            {
+                instance = this;
+            }
+            // is instance already set? and not me?
+            else if (instance != null)
+            {
+                Destroy(gameObject);
+                return;
+            }
+            //this should only happen to the instance
+            //takes gameObject to separate scene to keep it
+            DontDestroyOnLoad(gameObject);
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+
+        }
     }
 }
