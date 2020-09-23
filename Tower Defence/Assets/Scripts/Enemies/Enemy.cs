@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TowerDefence.Towers;
+using TowerDefence.Managers;
 
 //namespaces - categories of things
 //Enemies will have access to TowerDefence enemies namespace
@@ -48,6 +49,8 @@ namespace TowerDefence.Enemies
         private void Die(Tower _tower)
         {
             _tower.AddExperience(xp);
+            //player.AddMoney(money);
+            EnemyManager.instance.KillEnemy(this);
         }
 
         // Start is called before the first frame update
