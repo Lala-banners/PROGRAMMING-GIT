@@ -85,6 +85,18 @@ namespace TowerDefence.Towers
                 return damage * (level * 0.5f + 0.5f);
             }
         }
+
+        /// <summary>
+        /// The enemy the turret is currently targeting, if no enemy is targeted, this is null.
+        /// </summary>
+        protected Enemy TargetedEnemy
+        {
+            get
+            {
+                return target;
+            }
+        }
+
         #endregion
 
         #region VARIABLES
