@@ -8,7 +8,7 @@ using TowerDefence.Managers;
 //Towers will have access to TowerDefence.Towers namespace
 namespace TowerDefence.Towers
 {
-    public class Tower : MonoBehaviour
+    public abstract class Tower : MonoBehaviour
     {
         #region PROPERTIES
         public string TowerName // The public accessor for the towerName variable.
@@ -116,7 +116,7 @@ namespace TowerDefence.Towers
         [SerializeField]
         private float maximumRange = 5;
         [SerializeField, Min(0.1f)]
-        private float fireRate = 0.1f;
+        protected float fireRate = 0.1f;
 
         [Header("Experience Stats")]
         [SerializeField, Range(2, 5)]
@@ -174,17 +174,16 @@ namespace TowerDefence.Towers
             }
         }
 
-        protected virtual void RenderAttackVisuals()
-        {
-            //This is unused in the base class
-        }
+        protected abstract void RenderAttackVisuals();
+        protected abstract void RenderLevelUpVisuals();
+        
 
         public void LevelUp()
         {
             level++; //Add 1 to the level
             xp = 0;
 
-            //Render attack visuals here
+            RenderLevelUpVisuals();
         }
 
         //Fire() is only handling firing 
@@ -256,8 +255,8 @@ namespace TowerDefence.Towers
             return closest;
         }
 
-        // Update is called once per frame
-        void Update()
+        
+        protected virtual void Update()
         {
             Target();
             FireWhenReady();
