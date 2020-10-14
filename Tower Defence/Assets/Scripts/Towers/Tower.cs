@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic; //namespace
-using UnityEngine;
+﻿using UnityEngine; //namespace
 using TowerDefence.Enemies;
 using TowerDefence.Managers;
 

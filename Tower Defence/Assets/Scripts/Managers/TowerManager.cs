@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
-using TowerDefence.Managers;
 using TowerDefence.Towers;
 
 //namespaces - categories of things

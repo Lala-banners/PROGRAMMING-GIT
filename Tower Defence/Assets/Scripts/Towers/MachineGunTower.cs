@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using TowerDefence.Utilities;
-using TowerDefence.Managers;
 
 namespace TowerDefence.Towers
 {

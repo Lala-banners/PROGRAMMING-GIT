@@ -222,6 +222,33 @@ LineRenderer:
     generateLightingData: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+--- !u!114 &5728120247392904337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4067597136790588464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd9fb75bde3e4f142aec5e467e2153b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  towerName: 
+  description: 
+  cost: 1
+  damage: 1
+  minimumRange: 1
+  maximumRange: 5
+  fireRate: 0.1
+  maxLevel: 3
+  baseRequiredXp: 5
+  experienceScaler: 1
+  turret: {fileID: 8332531384127959052}
+  gunHolder: {fileID: 8470658913853785632}
+  bulletLine: {fileID: 7757456102264934965}
+  leftFirePoint: {fileID: 1248944500666156473}
+  rightFirePoint: {fileID: 585395376996563124}
 --- !u!1 &4247373755490921387
 GameObject:
   m_ObjectHideFlags: 0
@@ -503,33 +530,6 @@ Transform:
   m_Father: {fileID: 4067597135214195385}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5728120247392904337
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4067597136790588464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd9fb75bde3e4f142aec5e467e2153b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  towerName: 
-  description: 
-  cost: 1
-  damage: 1
-  minimumRange: 1
-  maximumRange: 5
-  fireRate: 0.1
-  maxLevel: 3
-  baseRequiredXp: 5
-  experienceScaler: 1
-  turret: {fileID: 8332531384127959052}
-  gunHolder: {fileID: 8470658913853785632}
-  bulletLine: {fileID: 7757456102264934965}
-  leftFirePoint: {fileID: 1248944500666156473}
-  rightFirePoint: {fileID: 585395376996563124}
 --- !u!1001 &8778466866057418302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -540,7 +540,7 @@ PrefabInstance:
     - target: {fileID: 4728888536830253581, guid: f88e2d4557197ab4190c1cbef5625bc4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.65
       objectReference: {fileID: 0}
     - target: {fileID: 4728888536830253581, guid: f88e2d4557197ab4190c1cbef5625bc4,
         type: 3}
@@ -550,7 +550,7 @@ PrefabInstance:
     - target: {fileID: 4728888536830253581, guid: f88e2d4557197ab4190c1cbef5625bc4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12
+      value: 11.93
       objectReference: {fileID: 0}
     - target: {fileID: 4728888536830253581, guid: f88e2d4557197ab4190c1cbef5625bc4,
         type: 3}
@@ -599,6 +599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 537727151724859936, guid: f88e2d4557197ab4190c1cbef5625bc4, type: 3}
+    - {fileID: 6454468500425528002, guid: f88e2d4557197ab4190c1cbef5625bc4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f88e2d4557197ab4190c1cbef5625bc4, type: 3}
 --- !u!1 &4067597136790588464 stripped
 GameObject:
