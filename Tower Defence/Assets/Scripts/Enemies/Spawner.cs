@@ -2,18 +2,34 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TowerDefence.Managers;
+using UnityEngine.Events; //wrapper class for events (also different to Unity Events, can be serialized)
 
 namespace TowerDefence.Enemies
 {
     public class Spawner : MonoBehaviour
     {
-        public float SpawnRate
+        [System.Serializable]
+        //Unity Event
+        public class AttackEvent : UnityEvent<float> { }
+        public AttackEvent onAttackEvent; 
+
+        //Delegate
+        public delegate float AttackDelegate();
+        public AttackDelegate onAttack; //By default onAttack is null.
+
+        public float MeleeAttack()
         {
-            get
-            {
-                return spawnRate;
-            }
+            print("Melee Attack!"); //use instead of debug.log
+            return 100f;
         }
+
+        public float ShootAttack()
+        {
+            print("Shoot Attack!");
+            return 50f;
+        }
+
+        public float SpawnRate { get { return spawnRate; } }
 
         [SerializeField]
         private float spawnRate = 1;
@@ -26,6 +42,11 @@ namespace TowerDefence.Enemies
         {
             //Save typing
             enemyManager = EnemyManager.instance;
+
+            onAttack += MeleeAttack;
+            onAttack += MeleeAttack;
+            onAttack += ShootAttack; //Will call MeleeAttack twice and ShootAttack once.
+            onAttack();
         }
 
         void Update()

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TowerDefence.Towers;
 using TowerDefence.Managers;
+using UnityEngine.Events; //A zero argument persistent callback that can be saved with the Scene.
 
 //namespaces - categories of things
 //Enemies will have access to TowerDefence enemies namespace
@@ -10,6 +11,11 @@ namespace TowerDefence.Enemies
 {
     public class Enemy : MonoBehaviour
     {
+        [System.Serializable]
+        public class DeathEvent : UnityEvent<Enemy> { }
+        public float XP { get { return xp; } }//Get xp and return amount (This is a property).
+        public int Money { get { return money; } } //Get money and return amount (This is a property).
+
         [Header("General Stats")]
         [SerializeField, Tooltip("How fast the enemy will move within the game")]
         private float speed = 1;
@@ -27,37 +33,42 @@ namespace TowerDefence.Enemies
         [SerializeField, Tooltip("Amount of money player will gain upon killing the enemy")]
         private int money = 1;
 
+        [Space] //Add spacing in Unity Inspector
+
+        [SerializeField]
+        private DeathEvent onDeath = new DeathEvent();
+
         private Player player; // The reference to the player gameObject in the scene.
 
         /// <summary>
-        /// Handles damage of the enemy and if below or equal to 0, calls Die
+        /// Handles damage of the enemy and if below or equal to 0, calls Die()
         /// </summary>
-        /// <param name="_tower">The tower doing the damage to the enemy.</param>
-        public void Damage(Tower _tower)
+        public void Damage(float _damage)
         {
-            health -= _tower.Damage;
+            health -= _damage;
             if (health <= 0)
             {
-                Die(_tower);
+                Die();
             }
         }
 
         /// <summary>
         /// Handles the visual, and technical features of dying, such as giving the tower experience.
         /// </summary>
-        /// <param name="_tower">The tower that killed the enemy</param>
-        private void Die(Tower _tower)
+        private void Die()
         {
-            _tower.AddExperience(xp);
-            //player.AddMoney(money);
-            EnemyManager.instance.KillEnemy(this);
+            onDeath.Invoke(this); //Anything subscribed to the event will automatically know to call Die() function.
+
+
+            //Death Visuals
         }
 
-        // Start is called before the first frame update
         void Start()
         {
             // Accessing the only player in the game
             player = Player.instance;
+            //Add subscribers to the event onDeath()
+            //onDeath.AddListener(player.AddMoney); causing errors
         }
 
         // Update is called once per frame

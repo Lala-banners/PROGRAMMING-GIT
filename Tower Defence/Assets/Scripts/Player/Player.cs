@@ -19,11 +19,19 @@ namespace TowerDefence
         private int money = 100;
 
         /// <summary>
-        /// Gives the player the passed amount of money
+        /// Gives the player the passed amount of money.
         /// </summary>
         public void AddMoney(int _money)
         {
             money += _money;
+        }
+
+        /// <summary>
+        /// Give player money besides when enemy dies.
+        /// </summary>
+        public void AddMoney(Enemies.Enemy _enemy)
+        {
+            money += _enemy.Money;
         }
 
         /// <summary>

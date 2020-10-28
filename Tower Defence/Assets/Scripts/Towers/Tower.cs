@@ -158,9 +158,9 @@ namespace TowerDefence.Towers
 #endif
 
         //_ differentiates between variable and parameters = problems
-        public void AddExperience(float _xp)
+        public void AddExperience(Enemy _enemy)
         {
-            xp += _xp;
+            xp += _enemy.XP; 
             //Check that the level is not maxed out and that we have
             // passed the required experience to level up
             if (level < maxLevel)
@@ -188,17 +188,15 @@ namespace TowerDefence.Towers
         public void Fire()
         {
             //Make sure there is actually something to target, if there is, damage it
-            //Get used to this if() - use it lots
             if (target != null)
             {
                 //(this) object
-                target.Damage(this);
+                target.Damage(Damage); //Property Damage
 
                 // Render attack visuals (Next week) 
                 RenderAttackVisuals();
             }
         }
-
 
         private void FireWhenReady()
         {
