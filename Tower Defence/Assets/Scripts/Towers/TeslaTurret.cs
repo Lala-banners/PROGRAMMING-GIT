@@ -6,7 +6,7 @@ using TowerDefence.Utilities;
 //Always start new tower script with namespace and abstract class
 namespace TowerDefence.Towers
 {
-    public class TeslaTower : Tower
+    public class TeslaTurret : Tower
     {
         #region Variables
         [Header("Telsa Bebe Specs")]

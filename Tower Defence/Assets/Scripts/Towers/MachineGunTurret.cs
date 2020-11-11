@@ -4,7 +4,7 @@ using TowerDefence.Utilities;
 namespace TowerDefence.Towers
 {
     //MachineGunTower has access to everything public in Tower script
-    public class MachineGunTower : Tower
+    public class MachineGunTurret : Tower
     {
 
         [Header("Machine Gun Specifics")]
@@ -74,11 +74,6 @@ namespace TowerDefence.Towers
                 }
                 //Done so the code doesn't have to keep going
             }
-                
-
-                    
-
-           
         }
 
         private void RenderBulletLine(Transform _start)

@@ -8,7 +8,6 @@ namespace TowerDefence.Managers
 {
     public class TowerManager : MonoBehaviour
     {
-        
         public static TowerManager instance = null;
 
         //Registered for each tower that we can spawn again

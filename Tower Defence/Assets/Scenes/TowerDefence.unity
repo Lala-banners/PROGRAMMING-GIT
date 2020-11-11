@@ -164,6 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79b13607467870a469a874d73767671a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onAttackEvent:
+    m_PersistentCalls:
+      m_Calls: []
   spawnRate: 0.1
 --- !u!1001 &132075606
 PrefabInstance:
@@ -210,7 +213,7 @@ PrefabInstance:
     - target: {fileID: 5601187180499628652, guid: 2c3319d0977023843b5425daec9416b6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5601187180499628652, guid: 2c3319d0977023843b5425daec9416b6,
         type: 3}
@@ -418,7 +421,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &558926631
 PrefabInstance:
@@ -590,7 +593,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &713618538
 PrefabInstance:
@@ -744,6 +747,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tower Platform Long Start
       objectReference: {fileID: 0}
+    - target: {fileID: 5140889878454676841, guid: d6732f079c021e041bfc1e5e9e3ba8c6,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5197127
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140889878454676841, guid: d6732f079c021e041bfc1e5e9e3ba8c6,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.015215132
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140889878454676841, guid: d6732f079c021e041bfc1e5e9e3ba8c6,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.8869858
+      objectReference: {fileID: 0}
+    - target: {fileID: 5140889878454676841, guid: d6732f079c021e041bfc1e5e9e3ba8c6,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.05650711
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6732f079c021e041bfc1e5e9e3ba8c6, type: 3}
 --- !u!4 &774842728 stripped
@@ -833,7 +856,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 37.83, y: 360, z: 0}
 --- !u!1001 &984230454
 PrefabInstance:
@@ -1005,7 +1028,7 @@ PrefabInstance:
     - target: {fileID: 4067597136790588464, guid: 7ef4dc75e4a933842876521654c8f4a2,
         type: 3}
       propertyPath: m_Name
-      value: Machine Gun
+      value: Machine Gun Turret
       objectReference: {fileID: 0}
     - target: {fileID: 4067597136790588467, guid: 7ef4dc75e4a933842876521654c8f4a2,
         type: 3}
@@ -1045,7 +1068,7 @@ PrefabInstance:
     - target: {fileID: 4067597136790588467, guid: 7ef4dc75e4a933842876521654c8f4a2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4067597136790588467, guid: 7ef4dc75e4a933842876521654c8f4a2,
         type: 3}
