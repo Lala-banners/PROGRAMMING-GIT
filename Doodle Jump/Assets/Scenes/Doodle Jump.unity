@@ -136,7 +136,7 @@ PrefabInstance:
     - target: {fileID: 8867259316438327080, guid: 38281eff4188c364d9723cc8694b1621,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.31733048
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 8867259316438327080, guid: 38281eff4188c364d9723cc8694b1621,
         type: 3}
@@ -418,7 +418,7 @@ Transform:
   m_GameObject: {fileID: 651577441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.6, y: 27.500002, z: 7.83}
-  m_LocalScale: {x: 11.263215, y: 12.2018175, z: 1.464218}
+  m_LocalScale: {x: 14.623033, y: 15.84162, z: 1.9009943}
   m_Children: []
   m_Father: {fileID: 2144371253}
   m_RootOrder: 2
@@ -492,6 +492,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38281eff4188c364d9723cc8694b1621, type: 3}
+--- !u!1 &845680372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8867259316438327082, guid: 38281eff4188c364d9723cc8694b1621,
+    type: 3}
+  m_PrefabInstance: {fileID: 8867259317921382314}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &871555531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -571,12 +577,12 @@ PrefabInstance:
     - target: {fileID: 8867259316438327080, guid: 38281eff4188c364d9723cc8694b1621,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.260433
+      value: 4.2
       objectReference: {fileID: 0}
     - target: {fileID: 8867259316438327080, guid: 38281eff4188c364d9723cc8694b1621,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.290035
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 8867259316438327080, guid: 38281eff4188c364d9723cc8694b1621,
         type: 3}
@@ -628,6 +634,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Platform (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8867259316438327086, guid: 38281eff4188c364d9723cc8694b1621,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38281eff4188c364d9723cc8694b1621, type: 3}
 --- !u!1001 &960137118
@@ -640,12 +651,12 @@ PrefabInstance:
     - target: {fileID: 8867259316438327080, guid: 38281eff4188c364d9723cc8694b1621,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.5881125
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 8867259316438327080, guid: 38281eff4188c364d9723cc8694b1621,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.4331884
+      value: 4.9
       objectReference: {fileID: 0}
     - target: {fileID: 8867259316438327080, guid: 38281eff4188c364d9723cc8694b1621,
         type: 3}
@@ -711,7 +722,7 @@ GameObject:
   - component: {fileID: 1267078750}
   - component: {fileID: 1267078751}
   m_Layer: 0
-  m_Name: The Killer
+  m_Name: Planet Killer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -725,7 +736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267078748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -47.9, z: 0}
+  m_LocalPosition: {x: 0, y: -54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2144371253}
@@ -770,8 +781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2144371251}
-  planetPrefab: {fileID: 8867259316438327082, guid: 38281eff4188c364d9723cc8694b1621,
-    type: 3}
+  planetPrefabs: {fileID: 845680372}
 --- !u!1001 &2069191551
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -855,7 +865,7 @@ GameObject:
   - component: {fileID: 2144371256}
   - component: {fileID: 2144371255}
   m_Layer: 0
-  m_Name: Fake player
+  m_Name: Astronaut
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
