@@ -6,7 +6,6 @@ namespace TowerDefence.Towers
     //MachineGunTower has access to everything public in Tower script
     public class MachineGunTurret : Tower
     {
-
         [Header("Machine Gun Specifics")]
         [SerializeField]
         private Transform turret;
