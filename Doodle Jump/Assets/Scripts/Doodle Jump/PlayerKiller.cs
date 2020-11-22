@@ -14,20 +14,6 @@ public class PlayerKiller : MonoBehaviour
         Destroy(playerObject.gameObject); //Destroy player on collision 
         gameOver.SetActive(true); //Make game over appear
         Time.timeScale = 0; //Stop time
-        player.topScore = player.finalScore; //Supposed to make the score equal to final score
-    }
-
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        player.HighScore();
     }
 }

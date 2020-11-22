@@ -23,15 +23,3 @@ public class Destroy : MonoBehaviour
         Destroy(collision.gameObject); //Destroy platforms as player jumps on new one
     }
 }
-
-/*If planet killer collides with the planet prefab object
-        if (collision.gameObject)
-        {
-            //Instantiate platforms where the player jumps to
-            myPlatform = (GameObject)Instantiate(planetPrefabs[2],
-                                     new Vector2(Random.Range(-5.5f, 5.5f), player.transform.position.y + (4 + Random.Range(0.5f, 1f))),
-                                     Quaternion.identity);
-
-            Destroy(collision.gameObject); //Destroy platforms as player jumps on new one
-        }
-        */

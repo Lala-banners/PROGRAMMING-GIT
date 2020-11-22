@@ -116,9 +116,9 @@ PlatformEffector2D:
   m_UseOneWay: 1
   m_UseOneWayGrouping: 0
   m_SurfaceArc: 180
-  m_UseSideFriction: 0
+  m_UseSideFriction: 1
   m_UseSideBounce: 1
-  m_SideArc: 1
+  m_SideArc: 180
 --- !u!114 &8867259316438327084
 MonoBehaviour:
   m_ObjectHideFlags: 0
