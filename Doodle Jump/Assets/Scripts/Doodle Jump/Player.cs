@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     public TMP_Text scoreText; //Text that will update with score (how far the player travels up)
     public TMP_Text highScore; //High score when either player wins the level or dies
 
+    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +31,7 @@ public class Player : MonoBehaviour
         SetScore();
     }
 
+    //Set score to the players y position
     public void SetScore()
     {
         //If player current position is greater than top score (0)
