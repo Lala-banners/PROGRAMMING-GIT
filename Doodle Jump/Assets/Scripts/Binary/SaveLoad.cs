@@ -2,11 +2,18 @@
 using System.Collections.Generic; //For making List<>
 using System.Runtime.Serialization.Formatters.Binary; //Serializing to Binary
 using UnityEngine;
+using TMPro;
 
 //This is simple way - there are other ways if system is complex
 public static class SaveLoad 
 {
     public static List<Game> savedGames = new List<Game>();
+
+    #region Game Data
+    public static TMP_Text highScore;
+
+ 
+    #endregion
 
     /// <summary>
     /// This saves the game.
@@ -32,15 +39,15 @@ public static class SaveLoad
     public static void Load()
     {
         //If the file exists then open it.
-        if(File.Exists(Application.persistentDataPath + "/savedGames.gd"))
+        if(File.Exists(Application.persistentDataPath + "/savedScores.gd"))
         {
             BinaryFormatter formatter = new BinaryFormatter();
 
                                    //File.Open = generic save file
-            using (FileStream file = File.Open(Application.persistentDataPath + "/savedGames.gd", FileMode.Open))
+            using (FileStream file = File.Open(Application.persistentDataPath + "/savedScores.gd", FileMode.Open))
             {
                 //Load all the saved file
-                SaveLoad.savedGames = (List<Game>)formatter.Deserialize(file); //Cast back to list of games which is what the information coming back is.
+                SaveLoad.savedGames = (List<Game>)formatter.Deserialize(file); //Cast back to list of high scores which is what the information coming back is.
                 file.Close();
             }
         }

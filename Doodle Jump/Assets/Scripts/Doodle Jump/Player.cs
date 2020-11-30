@@ -10,11 +10,30 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb2D;
     private float move;
 
-    public float topScore = 0f; //The score that changes when player jumps higher
+    #region Score Data
+    public float currentScore = 0f; //The score that changes when player jumps higher
+    public string scorePos; //location of the score
+    public string rank; //What rank player acheived 
+    public string doodlerName; //Name of player
     public TMP_Text scoreText; //Text that will update with score (how far the player travels up)
-    public TMP_Text highScore; //High score when either player wins the level or dies
+    public TMP_Text highScoreText; //High score when either player wins the level or dies
+    #endregion
 
-    
+   /* #region Player Singleton
+    public static Player instance;
+
+    private void Awake()
+    {
+        if(instance != null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Debug.LogError("There is more than one instance of Player");
+        }
+    }
+    #endregion*/
 
     // Start is called before the first frame update
     void Start()
@@ -35,17 +54,17 @@ public class Player : MonoBehaviour
     public void SetScore()
     {
         //If player current position is greater than top score (0)
-        if (rb2D.velocity.y > 0 && transform.position.y > topScore)
+        if (rb2D.velocity.y > 0 && transform.position.y > currentScore)
         {
             //make top score equal to the player position
-            topScore = transform.position.y;
+            currentScore = transform.position.y;
         }
         //Update score text to be top score
-        scoreText.text = "Score: " + Mathf.Round(topScore).ToString();
+        scoreText.text = "Score: " + Mathf.Round(currentScore).ToString();
     }
 
     public void HighScore()
     {
-        highScore.text = "High Score: " + Mathf.Round(topScore).ToString();
+        highScoreText.text = "High Score: " + Mathf.Round(currentScore).ToString();
     }
 }

@@ -18,7 +18,17 @@ public class SaveGameTest : MonoBehaviour
         Game.current = game;
     }
 
-    private void OnGUI()
+    public void Save()
+    {
+        SaveLoad.Save(Game.current);
+    }
+
+    public void Load()
+    {
+        SaveLoad.Load();
+    }
+
+    /*private void OnGUI()
     {
         if(GUILayout.Button ("Save"))
         {
@@ -29,5 +39,5 @@ public class SaveGameTest : MonoBehaviour
         {
             SaveLoad.Load();
         }
-    }
+    }*/
 }
