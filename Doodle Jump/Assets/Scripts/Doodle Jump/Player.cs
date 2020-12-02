@@ -33,7 +33,7 @@ public class Player : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        currentHighScore = 0f;
         score = 0f;
         Time.timeScale = 1;
         rb2D = GetComponent<Rigidbody2D>();
@@ -74,6 +74,7 @@ public class Player : MonoBehaviour
 
     public void HighScore() //Function for setting the high score
     {
+        //If current score is greater than current high score
         if (score > currentHighScore)
         {
             currentHighScore = score;
