@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
     public void SetScore()
     {
         //If player current position is greater than current score (0)
-        if (transform.position.y > score)
+        if (rb2D.velocity.y > 0 && transform.position.y > score)
         {
             //make current score equal to the player position
             score = transform.position.y;
@@ -79,6 +79,10 @@ public class Player : MonoBehaviour
         {
             currentHighScore = score;
             ScoreManager.Instance.UpdateHighScore(score);
+        }
+        else //Make current score equal current high score
+        {
+            currentHighScore = score;
         }
         ScoreManager.Instance.Save(this);
     }

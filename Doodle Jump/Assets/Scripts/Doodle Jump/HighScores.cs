@@ -13,7 +13,7 @@ public class HighScores
         name = player.doodlerName;
         scorePosition = player.scorePosition;
         rank = player.rank;
-        highScore = player.currentHighScore;
+        highScore = player.score;
     }
 
     public void GetData(Player player)
