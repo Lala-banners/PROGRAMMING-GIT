@@ -68,18 +68,18 @@ public class Player : MonoBehaviour
     //Set score to the players y position
     public void SetScore()
     {
-        //If player current position is greater than top score (0)
+        //If player current position is greater than current score (0)
         if (rb2D.velocity.y > 0 && transform.position.y > currentScore)
         {
-            //make top score equal to the player position
+            //make current score equal to the player position
             currentScore = transform.position.y;
         }
-        //Update score text to be top score
+        //Update score text to be current score
         scoreText.text = "Score: " + Mathf.Round(currentScore).ToString();
     }
 
-    public void HighScore()
+    public void HighScore() //Function for setting the high score
     {
-        highScoreText.text = "High Score: " + Mathf.Round(currentScore).ToString();
+        highScoreText.text = "High Score: " + Mathf.Round(currentScore).ToString(); //Setting HS text and making it the current score
     }
 }

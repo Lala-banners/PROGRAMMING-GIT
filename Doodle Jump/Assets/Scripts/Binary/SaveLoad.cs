@@ -9,12 +9,6 @@ public static class SaveLoad
 {
     public static List<Game> savedGames = new List<Game>();
 
-    #region Game Data
-    public static TMP_Text highScore;
-
- 
-    #endregion
-
     /// <summary>
     /// This saves the game.
     /// </summary>
