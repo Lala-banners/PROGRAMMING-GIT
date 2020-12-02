@@ -2,7 +2,6 @@
 using System.Collections.Generic; //For making List<>
 using System.Runtime.Serialization.Formatters.Binary; //Serializing to Binary
 using UnityEngine;
-using TMPro;
 
 //This is simple way - there are other ways if system is complex
 public static class SaveLoad 

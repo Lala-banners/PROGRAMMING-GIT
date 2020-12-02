@@ -1,10 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PlayerKiller : MonoBehaviour
 {
-    public static PlayerKiller instance = null;
+    public static PlayerKiller instance = null; //Singleton because there is only one player killer
 
     public GameObject playerObject;
     public GameObject gameOver;

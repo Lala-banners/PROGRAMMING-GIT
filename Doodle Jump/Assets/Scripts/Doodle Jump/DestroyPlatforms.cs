@@ -1,9 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 
-public class Destroy : MonoBehaviour
+public class DestroyPlatforms : MonoBehaviour
 {
     public GameObject player;
     public GameObject[] planetPrefabs;

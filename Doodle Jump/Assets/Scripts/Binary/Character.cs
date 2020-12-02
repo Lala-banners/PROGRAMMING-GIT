@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using UnityEngine;
-
+﻿
 // This makes this class be able to be stored in any sort of serialization system
 // such as Unity Inspector, Binary or JSON (text format that is completely language independent 
 // but uses conventions that are familiar to programmers of the C-family of languages, 

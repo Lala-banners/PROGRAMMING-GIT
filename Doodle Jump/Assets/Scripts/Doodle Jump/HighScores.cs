@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿
 [System.Serializable]
 //This script will contain the high score data
 public class HighScores 
@@ -11,11 +8,20 @@ public class HighScores
     public string rank;
     public float highScore;
 
-    /*public HighScores(Player player)
+    public void SetData(Player player)
     {
         name = player.doodlerName;
-        scorePos = player.scorePos;
+        scorePos = player.scorePosition;
         rank = player.rank;
         highScore = player.currentScore;
-    }*/
+    }
+
+    public void GetData(Player player)
+    {
+        player.doodlerName = name;
+        //TODO : Lara : Fix dis
+        player.scorePosition = scorePos;
+        player.rank = rank;
+        player.currentScore = highScore;
+    }
 }

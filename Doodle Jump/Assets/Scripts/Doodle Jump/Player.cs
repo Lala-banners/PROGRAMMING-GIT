@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using TMPro;
 
 public class Player : MonoBehaviour
@@ -13,30 +10,26 @@ public class Player : MonoBehaviour
 
     #region Score Data
     public float currentScore = 0f; //The score that changes when player jumps higher
-    public string scorePos; //location of the score
+    public string scorePosition; //location of the score
     public string rank; //What rank player acheived 
     public string doodlerName; //Name of player
-    public TMP_Text scoreText; //Text that will update with score (how far the player travels up)
-    public TMP_Text highScoreText; //High score when either player wins the level or dies
     #endregion
 
     //public bool 
 
-   /* #region Player Singleton
-    public static Player instance;
-
-    private void Awake()
-    {
-        if(instance != null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Debug.LogError("There is more than one instance of Player");
-        }
-    }
-    #endregion*/
+    /* #region Player Singleton
+     * public static Player instance = null;  
+     private void Awake()
+     {
+         if(instance == null)
+         {
+             instance = this;
+         }
+         else if(instance != this)
+         {
+             Destroy(gameObject);
+         }
+     }#endregion*/
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +37,7 @@ public class Player : MonoBehaviour
         Time.timeScale = 1;
         rb2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>(); //Get access to sprite renderer of astronaut doodler
+        ScoreManager.Instance.Load(this);
     }
 
 
@@ -74,12 +68,12 @@ public class Player : MonoBehaviour
             //make current score equal to the player position
             currentScore = transform.position.y;
         }
-        //Update score text to be current score
-        scoreText.text = "Score: " + Mathf.Round(currentScore).ToString();
+        ScoreManager.Instance.UpdateScore(currentScore);
     }
 
     public void HighScore() //Function for setting the high score
     {
-        highScoreText.text = "High Score: " + Mathf.Round(currentScore).ToString(); //Setting HS text and making it the current score
+        ScoreManager.Instance.UpdateHighScore(currentScore);
+        ScoreManager.Instance.Save(this);
     }
 }
