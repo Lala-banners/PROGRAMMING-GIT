@@ -67,12 +67,6 @@ public class ScoreManager : MonoBehaviour
 
     public void UpdateHighScore(float currentScore)
     {
-        highScoreText.text = "High Score: " + Mathf.Round(currentScore).ToString(); //Setting HS text and making it the current score
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        highScoreText.text = " " + Mathf.Round(currentScore).ToString(); //Setting HS text and making it the current score
     }
 }

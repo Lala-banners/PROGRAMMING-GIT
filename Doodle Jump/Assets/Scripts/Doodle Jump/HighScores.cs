@@ -4,24 +4,23 @@
 public class HighScores 
 {
     public string name;
-    public string scorePos;
+    public string scorePosition;
     public string rank;
     public float highScore;
 
     public void SetData(Player player)
     {
         name = player.doodlerName;
-        scorePos = player.scorePosition;
+        scorePosition = player.scorePosition;
         rank = player.rank;
-        highScore = player.currentScore;
+        highScore = player.currentHighScore;
     }
 
     public void GetData(Player player)
     {
         player.doodlerName = name;
-        //TODO : Lara : Fix dis
-        player.scorePosition = scorePos;
+        player.scorePosition = scorePosition;
         player.rank = rank;
-        player.currentScore = highScore;
+        player.currentHighScore = highScore;
     }
 }
