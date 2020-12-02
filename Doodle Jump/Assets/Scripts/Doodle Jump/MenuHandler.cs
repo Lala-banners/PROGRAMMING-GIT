@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MenuHandler : MonoBehaviour
 {
-    public GameObject tutorial;
-
+    //public GameObject tutorial;
 
     public void ChangeScene(int sceneIndex) //Function to change from Main Menu scene to the game scene
     {

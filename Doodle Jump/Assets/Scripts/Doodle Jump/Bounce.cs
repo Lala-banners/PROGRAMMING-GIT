@@ -11,6 +11,7 @@ public class Bounce : MonoBehaviour
         if (collision.gameObject.GetComponent<Rigidbody2D>().velocity.y <= 0)
         {
             collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector3.up * 500f); //propel player upwards
+            PlayerKiller.instance.Move();
         }
     }
 }

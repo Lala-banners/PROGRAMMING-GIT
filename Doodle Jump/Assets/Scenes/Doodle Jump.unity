@@ -370,7 +370,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 1.3243904, y: 0}
@@ -394,7 +394,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 460214417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -15.8, z: 0}
+  m_LocalPosition: {x: 0, y: -6.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -823,7 +823,7 @@ Transform:
   m_GameObject: {fileID: 651577441}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 2.6, y: 27.500002, z: 7.83}
-  m_LocalScale: {x: 14.623033, y: 15.84162, z: 1.9009943}
+  m_LocalScale: {x: 3.5512035, y: 3.8471377, z: 0.46165648}
   m_Children: []
   m_Father: {fileID: 2144371253}
   m_RootOrder: 1
@@ -1282,8 +1282,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49da209d315fb5b4385149c525a9ab51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tutorial: {fileID: 8168344284119296921, guid: cd92dab17739d7a43a66f048d2dc3a2f,
-    type: 3}
 --- !u!1 &1060418732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1658,7 +1656,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1267078748}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -54, z: 0}
+  m_LocalPosition: {x: 0, y: -11.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2144371253}
@@ -1677,7 +1675,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -4.145624, y: 2.2245696}
+  m_Offset: {x: -4.1456223, y: 0.666849}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1688,7 +1686,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 130.42986, y: 5.449139}
+  m_Size: {x: 130.42986, y: 2.333698}
   m_EdgeRadius: 0
 --- !u!114 &1267078751
 MonoBehaviour:
@@ -1716,6 +1714,7 @@ MonoBehaviour:
   - {fileID: 3672045113290583154, guid: 2d886aa868fdd5a448eb7b3d460f33fe, type: 3}
   - {fileID: 759647176973991983, guid: 428c95848157cf841ad5cef8011d7f05, type: 3}
   - {fileID: 7749285873366495217, guid: d6fb6576c31003f458f0898c0cc174b4, type: 3}
+  level: {fileID: 2123212761}
 --- !u!1 &1800220363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2069,6 +2068,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110533155}
   m_CullTransparentMesh: 0
+--- !u!4 &2123212761 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8017462982950014945, guid: cd7a6b5a731a3314cbf982394d8eab14,
+    type: 3}
+  m_PrefabInstance: {fileID: 8017462982980447595}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2144371251
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,7 +2089,7 @@ GameObject:
   - component: {fileID: 2144371255}
   m_Layer: 0
   m_Name: Astronaut
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2128,7 +2133,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a27406c97e517164cbd7003354e6739c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20caf14f74877aa44a3027ee86a393a6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2148,7 +2153,7 @@ Transform:
   m_GameObject: {fileID: 2144371251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.1, y: -1.7, z: 0}
-  m_LocalScale: {x: 0.13, y: 0.12, z: 1}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_Children:
   - {fileID: 1267078749}
   - {fileID: 651577443}
@@ -2173,8 +2178,8 @@ MonoBehaviour:
   doodlerName: 
   scoreText: {fileID: 335645366}
   highScoreText: {fileID: 7938562982981942711}
---- !u!58 &2144371255
-CircleCollider2D:
+--- !u!61 &2144371255
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2186,9 +2191,19 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.031203434}
+  m_Offset: {x: -0.0601089, y: -0.16702706}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.24, y: 1.2}
+    newSize: {x: 10.24, y: 10.24}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 4.0902834
+  m_Size: {x: 1.1851909, y: 1.0814604}
+  m_EdgeRadius: 0
 --- !u!50 &2144371256
 Rigidbody2D:
   serializedVersion: 4
@@ -2347,6 +2362,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6375942970907129459, guid: 8a8f2467397ef424882ff88a44fc8175,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6375942970907129469, guid: 8a8f2467397ef424882ff88a44fc8175,
         type: 3}
       propertyPath: m_Name
@@ -2362,6 +2382,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 926166036}
+    - target: {fileID: 6375942971234797155, guid: 8a8f2467397ef424882ff88a44fc8175,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7817176518689255553, guid: 8a8f2467397ef424882ff88a44fc8175,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2452,6 +2477,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Level
+      objectReference: {fileID: 0}
+    - target: {fileID: 8017462982950014946, guid: cd7a6b5a731a3314cbf982394d8eab14,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd7a6b5a731a3314cbf982394d8eab14, type: 3}

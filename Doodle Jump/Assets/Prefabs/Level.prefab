@@ -109,6 +109,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red platform
       objectReference: {fileID: 0}
+    - target: {fileID: 8021834078742954143, guid: 5343f40688238c5418a0473bd614e9af,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5343f40688238c5418a0473bd614e9af, type: 3}
 --- !u!4 &8017462982468775518 stripped
@@ -128,6 +133,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Water platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 7749285873366495217, guid: d6fb6576c31003f458f0898c0cc174b4,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     - target: {fileID: 7749285873366495219, guid: d6fb6576c31003f458f0898c0cc174b4,
         type: 3}
@@ -259,6 +269,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Purple platform
       objectReference: {fileID: 0}
+    - target: {fileID: 7004324838569465927, guid: 20bb3c46126b5484e806a8fde08560b2,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 20bb3c46126b5484e806a8fde08560b2, type: 3}
 --- !u!4 &8017462982973508015 stripped
@@ -278,6 +293,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: earth platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042755317134791435, guid: 2958e49de89dde54b980fa6c6f4eca60,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     - target: {fileID: 9042755317134791437, guid: 2958e49de89dde54b980fa6c6f4eca60,
         type: 3}
@@ -409,6 +429,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Blue Platform
       objectReference: {fileID: 0}
+    - target: {fileID: 8867259316438327082, guid: 38281eff4188c364d9723cc8694b1621,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38281eff4188c364d9723cc8694b1621, type: 3}
 --- !u!4 &8017462982571789801 stripped
@@ -428,6 +453,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Orange platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 4715632405088444359, guid: b276386913a60c747b4fb705b7f3e918,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     - target: {fileID: 4715632405088444361, guid: b276386913a60c747b4fb705b7f3e918,
         type: 3}
@@ -559,6 +589,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Lines platform
       objectReference: {fileID: 0}
+    - target: {fileID: 6730803370699448334, guid: c91b1c69f23450d4eb521c5fd9e8dbd8,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c91b1c69f23450d4eb521c5fd9e8dbd8, type: 3}
 --- !u!4 &8017462981839890579 stripped
@@ -578,6 +613,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ice platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 2878580076313797224, guid: 7d622f2b4731dac42bb9b2b7f313ce57,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     - target: {fileID: 2878580076313797226, guid: 7d622f2b4731dac42bb9b2b7f313ce57,
         type: 3}
@@ -709,6 +749,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sand platform
       objectReference: {fileID: 0}
+    - target: {fileID: 3672045113290583154, guid: 2d886aa868fdd5a448eb7b3d460f33fe,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d886aa868fdd5a448eb7b3d460f33fe, type: 3}
 --- !u!4 &8017462982488846233 stripped
@@ -784,6 +829,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Storm platform
       objectReference: {fileID: 0}
+    - target: {fileID: 759647176973991983, guid: 428c95848157cf841ad5cef8011d7f05,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 428c95848157cf841ad5cef8011d7f05, type: 3}
 --- !u!4 &8017462983544984798 stripped
@@ -803,6 +853,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: cyan platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 593535919133122772, guid: 3165cd3aee031734a9f95d8a23689fe3,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     - target: {fileID: 593535919133122858, guid: 3165cd3aee031734a9f95d8a23689fe3,
         type: 3}
@@ -933,6 +988,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Dark platform
+      objectReference: {fileID: 0}
+    - target: {fileID: 446455219296329646, guid: 6f60173a742ec9849856faba2472998d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Platform
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6f60173a742ec9849856faba2472998d, type: 3}
