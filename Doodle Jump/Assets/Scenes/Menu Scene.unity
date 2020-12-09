@@ -661,6 +661,31 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8550063062322743952, guid: cd92dab17739d7a43a66f048d2dc3a2f,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550063062322743952, guid: cd92dab17739d7a43a66f048d2dc3a2f,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550063062322743952, guid: cd92dab17739d7a43a66f048d2dc3a2f,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550063062322743952, guid: cd92dab17739d7a43a66f048d2dc3a2f,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8550063062322743952, guid: cd92dab17739d7a43a66f048d2dc3a2f,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9217591479478642669, guid: cd92dab17739d7a43a66f048d2dc3a2f,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -924,6 +949,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49da209d315fb5b4385149c525a9ab51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  masterAudio: {fileID: 0}
+  musicSlider: {fileID: 0}
+  muteToggle: {fileID: 0}
+  SFXSlider: {fileID: 0}
+  jumpFX: {fileID: 0}
+  options: {fileID: 0}
 --- !u!4 &1183826906
 Transform:
   m_ObjectHideFlags: 0
